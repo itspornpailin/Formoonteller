@@ -5,6 +5,8 @@ using namespace std;
 
 int main(){
 
+    Welcome();
+
     char gender[2]={'F','M'};
     char ansgender;
     string name;
@@ -31,3 +33,23 @@ int main(){
     return 0;
 }
 
+void Welcome(){
+    cout << "Welcome to Formoonteller!\n";
+    cout << " - - - - - - - - - - - - - - - - \n";
+    cout << "|                              |\n";
+    cout << "|                              |\n";
+    cout << "|                  *           |\n";
+    cout << "|            *   *             |\n";
+    cout << "|         *     *              |\n";
+    cout << "|       *      *               |\n";
+    cout << "|      *      *                |\n";
+    cout << "|      *      *                |\n";
+    cout << "|       *     *                |\n";
+    cout << "|        *     *               |\n";
+    cout << "|          *    *              |\n";
+    cout << "|             *  *             |\n";
+    cout << "|                  *           |\n";
+    cout << "|                              |\n";
+    cout << " - - - - - - - - - - - - - - - - \n";
+    
+}

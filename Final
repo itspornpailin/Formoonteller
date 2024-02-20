@@ -1,11 +1,32 @@
 #include<iostream>
 #include<string>
 using namespace std;
-
+void Welcome(){
+    cout << "Welcome to Formoonteller!\n";
+    cout << " - - - - - - - - - - - - - - - - \n";
+    cout << "|                              |\n";
+    cout << "|                              |\n";
+    cout << "|                  *           |\n";
+    cout << "|            *   *             |\n";
+    cout << "|         *     *              |\n";
+    cout << "|       *      *               |\n";
+    cout << "|      *      *                |\n";
+    cout << "|      *      *                |\n";
+    cout << "|       *     *                |\n";
+    cout << "|        *     *               |\n";
+    cout << "|          *    *              |\n";
+    cout << "|             *  *             |\n";
+    cout << "|                  *           |\n";
+    cout << "|                              |\n";
+    cout << " - - - - - - - - - - - - - - - - \n";
+    
+}
 
 int main(){
 
-    char gender[4]={'F','M'};
+    Welcome();
+
+    char gender[2]={'F','M'};
     char ansgender;
     string name;
     string prename;
