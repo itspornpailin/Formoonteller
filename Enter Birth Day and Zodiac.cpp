@@ -3,7 +3,7 @@
 
 using namespace std;
 
-string determineZodiacSign(int month, int day) {
+string ZodiacSign(int month, int day) {
     string ZodiacSign;
 
     if ((month == 1 && day >= 20) || (month == 2 && day <= 18))
@@ -31,7 +31,7 @@ string determineZodiacSign(int month, int day) {
     else if ((month == 12 && day >= 22) || (month == 1 && day <= 19))
         ZodiacSign = "Capricorn";
     else
-        ZodiacSign = "Invalid date";
+        ZodiacSign = "Plese enter your birthday again";
 
     return ZodiacSign;
 }
@@ -50,10 +50,21 @@ int main() {
 
     cout << "You birthday : " << day << "/" << month << "/" << year << endl;
 
-    string sign = determineZodiacSign(month, day);
-    cout << "Your zodiac sign is : " << sign << endl;
+    string sign = ZodiacSign(month, day);
+    string input;
+    cout << "Your zodiac sign is : " << sign << " Right? (Y/N)" << endl;
+    cin >> input;
+    if (input == "Y")
+       cout << "Your zodiac sign is : " << sign << endl;;
+    else if(input == "N")
+       cout << "Are you sure ? (Y/N)";
+       cin >> input;
+    else
+       cout << "Plese enter your birthday again";
+    cin.get();
 
 
     return 0;
 }
+
 
