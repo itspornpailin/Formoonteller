@@ -1,1 +1,54 @@
+#include<iostream>
+#include<string>
+using namespace std;
+void Welcome(){
+    cout << "Welcome to Formoonteller!\n";
+    cout << " - - - - - - - - - - - - - - - - \n";
+    cout << "|                              |\n";
+    cout << "|                              |\n";
+    cout << "|                  *           |\n";
+    cout << "|            *   *             |\n";
+    cout << "|         *     *              |\n";
+    cout << "|       *      *               |\n";
+    cout << "|      *      *                |\n";
+    cout << "|      *      *                |\n";
+    cout << "|       *     *                |\n";
+    cout << "|        *     *               |\n";
+    cout << "|          *    *              |\n";
+    cout << "|             *  *             |\n";
+    cout << "|                  *           |\n";
+    cout << "|                              |\n";
+    cout << " - - - - - - - - - - - - - - - - \n";
+    
+}
+
+int main(){
+
+    Welcome();
+
+    char gender[2]={'F','M'};
+    char ansgender;
+    string name;
+    string prename;
+    
+    
+    while(true){
+        cout<<"Enter your gender: ";
+        cin>>ansgender;
+        
+        if(toupper(ansgender) == 'F' || toupper(ansgender) == 'M'){
+            break;
+        }
+    }
+    
+    cout<<"Enter your name : ";
+    cin.ignore();
+    getline(cin,name);
+    
+    if(toupper(ansgender) == 'F') cout << "Hello! Ms. " << name << endl;
+    else if(toupper(ansgender) == 'M') cout << "Hello! Mr." << name << endl;
+    
+
+    return 0;
+}
 

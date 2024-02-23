@@ -5,9 +5,7 @@ using namespace std;
 
 int main(){
 
-
-
-    char gender[2]={'F','M'};
+    char gender[4]={'F','M'};
     char ansgender;
     string name;
     string prename;
@@ -16,20 +14,14 @@ int main(){
     while(true){
         cout<<"Enter your gender: ";
         cin>>ansgender;
-        
         if(toupper(ansgender) == 'F' || toupper(ansgender) == 'M'){
             break;
         }
     }
     
     cout<<"Enter your name : ";
-    cin.ignore();
     getline(cin,name);
-    
-    if(toupper(ansgender) == 'F') cout << "Hello! Ms. " << name << endl;
-    else if(toupper(ansgender) == 'M') cout << "Hello! Mr." << name << endl;
     
 
     return 0;
 }
-
