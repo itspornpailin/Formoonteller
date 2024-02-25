@@ -54,6 +54,7 @@ void YourBirthday(int, int, int){
 
 int main() {
     void YourBirthday(day, month, year)
+    cout << Your bithdays;
 
     string sign = ZodiacSign(month, day);
     string input;
