@@ -36,7 +36,7 @@ string ZodiacSign(int month, int day) {
     return ZodiacSign;
 }
 
-int main() {
+void YourBirthday(int, int, int){
     int day, month, year;
 
     cout << "Enter your birth day(DD) : ";
@@ -49,6 +49,11 @@ int main() {
     cin >> year;
 
     cout << "You birthday : " << day << "/" << month << "/" << year << endl;
+
+}
+
+int main() {
+    void YourBirthday(day, month, year)
 
     string sign = ZodiacSign(month, day);
     string input;
