@@ -9,11 +9,7 @@ string RandomCardPast(){
     string cardPast;
     
     srand(5);
-    int x = (rand()%43+1) - 5;
-    
-    if(x < 0){
-        x = x + 10;
-    }
+    int x = (rand()%43+1);
     
     if(x == 1){
         return cardPast = "New Moon";
@@ -283,12 +279,8 @@ string RandomMeaningPast(string cardPast){
 string RandomCardPresent(){
     string cardPresent;
 
-    srand(50);
-    int x = (rand()%43+1) - 10;
-    
-    if(x < 0){
-        x = x + 20;
-    }
+    srand(10);
+    int x = rand()%43+1;
 
     if(x == 1){
         return cardPresent = "New Moon";
@@ -558,12 +550,8 @@ string RandomMeaningPresent(string cardPresent){
 string RandomCardFuture(){
     string cardFuture;
     
-    srand(100);
-    int x = (rand()%43+1) - 20;
-    
-    if(x < 0){
-        x = x + 30;
-    }
+    srand(0);
+    int x = rand()%43+1;
 
     if(x == 1){
         return cardFuture = "New Moon";
