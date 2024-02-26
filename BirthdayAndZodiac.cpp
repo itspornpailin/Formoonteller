@@ -2,8 +2,7 @@
 #include<string>
 using namespace std;
 
-string YourBirthday(int day, int month, int year) {
-
+void YourBirthday(int& day, int& month, int& year) {
     cout << "Enter your birth day (DD): ";
     cin >> day;
     cout << "Enter your birth month (MM): ";
@@ -11,13 +10,10 @@ string YourBirthday(int day, int month, int year) {
     cout << "Enter your birth year (YYYY): ";
     cin >> year;
 
-    cout << "Your birthday is : " << day << "/" << month << "/" << year << endl;
-
     if (day < 1 || day > 31 || month < 1 || month > 12 || year < 0 || year > 2024) {
         cout << "Invalid input. Please enter your birthday again." << endl;
-        return YourBirthday(day, month, year);
+        YourBirthday(day, month, year);
     }
-
 }
 
 string YourZodiac(int day, int month){
@@ -48,14 +44,13 @@ string YourZodiac(int day, int month){
     else if ((month == 12 && day >= 22) || (month == 1 && day <= 19))
         ZodiacSign = "Capricorn";
     else
-        ZodiacSign = "Invalid date. Plese check your birthday.";
+        ZodiacSign = "Invalid date. Please check your birthday.";
 
     return ZodiacSign;
-
 }
 
 int main() {
-    int day, month, year;
+    int day = 0, month = 0, year = 0; // Initialize variables
 
     YourBirthday(day, month, year);
 
