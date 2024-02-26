@@ -14,7 +14,7 @@ int main(){
     
     
     while(true){
-        cout<<"Enter your gender: ";
+        cout<<"Enter your gender (F/M): ";
         cin>>ansgender;
         
         if(toupper(ansgender) == 'F' || toupper(ansgender) == 'M'){
