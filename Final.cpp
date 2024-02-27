@@ -120,12 +120,15 @@ int main() {
 
     string ZodiacSign = YourZodiac(day, month);
     cout << "Your zodiac is : " << ZodiacSign << ", Right? (Y/N)" << endl;
-    string Input ;
+    string Input;
+    string sure;
     cin >> Input;
-    if (Input == "Y")
-        cout << "Your zodiac is : " << ZodiacSign;
-    else if (Input == "N")
-        cout << "Plese check your birthday again.";
+    if (Input == "N" || Input == "n")
+        cout << "Are you sure? (Y/N)";
+        cin >> sure;
+        cout << "Your prediction is..";
+    else if (Input == "Y")
+        cout << "Your prediction is..";
     else
         cout << "Invalid zodiac. Please enter your birthday again.";
 
