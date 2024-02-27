@@ -118,8 +118,16 @@ int main() {
 
     YourBirthday(day, month, year);
 
-    string SignZodiac = YourZodiac(day, month);
-    cout << "Your zodiac is : " << SignZodiac << endl;
+    string ZodiacSign = YourZodiac(day, month);
+    cout << "Your zodiac is : " << ZodiacSign << ", Right? (Y/N)" << endl;
+    string Input ;
+    cin >> Input;
+    if (Input == "Y")
+        cout << "Your zodiac is : " << ZodiacSign;
+    else if (Input == "N")
+        cout << "Plese check your birthday again.";
+    else
+        cout << "Invalid zodiac. Please enter your birthday again.";
 
     random_device rd;
     mt19937 rng(rd());
