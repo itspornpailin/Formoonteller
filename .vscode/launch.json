@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "c:/Users/Acer/OneDrive - Chiang Mai University/compro project/Tarot-Reading",
-      "program": "c:/Users/Acer/OneDrive - Chiang Mai University/compro project/Tarot-Reading/build/Debug/outDebug",
+      "cwd": "c:/Users/ASUS2020/Formoonteller-1",
+      "program": "c:/Users/ASUS2020/Formoonteller-1/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [

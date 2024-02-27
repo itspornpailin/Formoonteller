@@ -17,5 +17,7 @@ int main(){
 
         cout << "Go again? Y/N" << endl;
         cin >> answer;
+
+        return 0;
     }
 }
