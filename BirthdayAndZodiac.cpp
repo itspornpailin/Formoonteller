@@ -2,7 +2,7 @@
 #include<string>
 using namespace std;
 
-void YourBirthday(int& day, int& month, int& year) {
+void EnterBirthday(int& day, int& month, int& year) {
     cout << "Enter your birth day (DD): ";
     cin >> day;
     cout << "Enter your birth month (MM): ";
@@ -12,7 +12,7 @@ void YourBirthday(int& day, int& month, int& year) {
 
     if (day < 1 || day > 31 || month < 1 || month > 12 || year < 0 || year > 2024) {
         cout << "Invalid input. Please enter your birthday again." << endl;
-        YourBirthday(day, month, year);
+        EnterBirthday(day, month, year);
     }
 }
 
@@ -47,15 +47,25 @@ string YourZodiac(int day, int month){
         ZodiacSign = "Invalid date. Please check your birthday.";
 
     return ZodiacSign;
+
 }
 
 int main() {
-    int day = 0, month = 0, year = 0; // Initialize variables
+    int day = 0, month = 0, year = 0;
 
-    YourBirthday(day, month, year);
+    EnterBirthday(day, month, year);
 
-    string SignZodiac = YourZodiac(day, month);
-    cout << "Your zodiac is : " << SignZodiac << endl;
-
+    string ZodiacSign = YourZodiac(day, month);
+    cout << "Your zodiac is : " << ZodiacSign << ", Right? (Y/N)" << endl;
+    string Input ;
+    cin >> Input;
+    if (Input == "Y")
+        cout << "Your zodiac is : " << ZodiacSign;
+    else if (Input == "N")
+        cout << "Plese check your birthday again.";
+    else
+        cout << "Invalid zodiac. Please enter your birthday again.";
+    
+        
     return 0;
 }
