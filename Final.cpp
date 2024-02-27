@@ -129,11 +129,12 @@ int main() {
     if (Input == "N" || Input == "n"){
         cout << "Are you sure? (Y/N)";
         
-    }else if(Input == "Y"){
+    }else if(Input == "Y" || Input == "y"){
         cout << "Your prediction is..";
          break ;
     }else{
-        cout << "Invalid zodiac. Please enter your birthday again.";
+        cout << "Invalid zodiac. Please enter your birthday again. \n";
+        YourBirthday(day, month, year);
     }
     }
     random_device rd;
