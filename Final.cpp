@@ -126,17 +126,15 @@ int main() {
     while(true){
    
     cin >> Input;
-    if (Input == "N" || Input == "n")
+    if (Input == "N" || Input == "n"){
         cout << "Are you sure? (Y/N)";
-        cin >> sure;
-        cout << "Your prediction is..";
-        break ;
-    else if (Input == "Y")
+        
+    }else if(Input == "Y"){
         cout << "Your prediction is..";
          break ;
-    else
+    }else{
         cout << "Invalid zodiac. Please enter your birthday again.";
-         break ;
+    }
     }
     random_device rd;
     mt19937 rng(rd());
