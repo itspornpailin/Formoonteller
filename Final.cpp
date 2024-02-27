@@ -122,16 +122,22 @@ int main() {
     cout << "Your zodiac is : " << ZodiacSign << ", Right? (Y/N)" << endl;
     string Input;
     string sure;
+    
+    while(true){
+   
     cin >> Input;
     if (Input == "N" || Input == "n")
         cout << "Are you sure? (Y/N)";
         cin >> sure;
         cout << "Your prediction is..";
+        break ;
     else if (Input == "Y")
         cout << "Your prediction is..";
+         break ;
     else
         cout << "Invalid zodiac. Please enter your birthday again.";
-
+         break ;
+    }
     random_device rd;
     mt19937 rng(rd());
 
