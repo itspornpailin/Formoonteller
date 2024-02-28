@@ -140,6 +140,9 @@ string RandomCardPast(){
     if(x == 43){
         return cardPast = "South Node";
     }
+    if(x == 44){
+        return cardPast = "North Node";
+    }
 }
 
 string RandomMeaningPast(string cardPast){
@@ -269,9 +272,12 @@ string RandomMeaningPast(string cardPast){
         return meaningPast = "A resolution to your question is closer than you may think.";
     }
     if(cardPast == "Blue Moon"){
-        return meaningPast = "Your attraction toward someone may be verging on the obsessive.";
+        return meaningPast = "This situation is unlikely to repeat.";
     }
     if(cardPast == "South Node"){
+        return meaningPast = "Your attraction to someone may be verging on the obsessive.";
+    }
+    if(cardPast == "North Node"){
         return meaningPast = "Stand on your own two feet.";
     }
 }
@@ -411,6 +417,9 @@ string RandomCardPresent(){
     if(x == 43){
         return cardPresent = "South Node";
     }
+    if(x == 44){
+        return cardPresent = "North Node";
+    }
 }
 
 string RandomMeaningPresent(string cardPresent){
@@ -544,6 +553,9 @@ string RandomMeaningPresent(string cardPresent){
     }
     if(cardPresent == "South Node"){
         return meaningPresent = "Don't let your past hold you back.";
+    }
+    if(cardPresent == "North Node"){
+        return meaningPresent = "Step out your comfort zone";
     }
 }
 
@@ -682,6 +694,9 @@ string RandomCardFuture(){
     if(x == 43){
         return cardFuture = "South Node";
     }
+    if(x == 44){
+        return cardFuture = "North Node";
+    }
 }
 
 string RandomMeaningFuture(string cardFuture){
@@ -811,9 +826,12 @@ string RandomMeaningFuture(string cardFuture){
         return meaningFuture = "Something exciting lies ahead!";
     }
     if(cardFuture == "Blue Moon"){
-        return meaningFuture = "Just because you can do something, doesn't mean you should.";
+        return meaningFuture = "If you can believe it, you can achieve it.";
     }
     if(cardFuture == "South Node"){
+        return meaningFuture = "Just because you can do something, doesn't mean you should.";
+    }
+    if(cardFuture == "North Node"){
         return meaningFuture = "Time to stop obsessing about someone or something.";
     }
 }
