@@ -130,7 +130,7 @@ int main() {
         cout << "Are you sure? (Y/N)";
         
     }else if(Input == "Y" || Input == "y"){
-        cout << "Your prediction is..";
+        cout << "Your prediction is... ";
          break ;
     }else{
         cout << "Invalid zodiac. Please enter your birthday again. \n";
